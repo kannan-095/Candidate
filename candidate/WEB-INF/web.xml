@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+  <servlet>
+    <servlet-name>poda/demo</servlet-name>
+    <servlet-class>Servlet</servlet-class>
+  </servlet>
+
+  
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>     
