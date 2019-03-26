@@ -28,7 +28,7 @@ public class SaveServlet extends HttpServlet{
 		        c.setPassword(password);  
 		        c.setEmail(email);  
 		        c.setCountry(country);  
-		        int status=Candidate.save(c);  
+		        int status=0;  
 		        if(status>0){  
 		            out.print("<p>Record saved successfully!</p>");  
 		            request.getRequestDispatcher("index.html").include(request, response);  
