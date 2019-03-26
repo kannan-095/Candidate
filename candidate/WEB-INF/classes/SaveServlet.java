@@ -23,11 +23,16 @@ public class SaveServlet extends HttpServlet{
 		        String address=request.getParameter("address");
 		        String about=request.getParameter("about");
 		       
-		        Candidate c=new Candidate();  
+		        Candidate c=new Candidate();
+		  	c.setuserid(id);
 		        c.setusername(username);  
 		        c.setPassword(password);  
 		        c.setEmail(email);  
-		        c.setCountry(country);  
+		        c.setCountry(country); 
+		        c.setzipcode(zipcode);
+		  	c.setsex(sex);
+		  	c.setaddress(address);
+		  	c.setabout(about);
 		        int status=0;  
 		        if(status>0){  
 		            out.print("<p>Record saved successfully!</p>");  
